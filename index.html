@@ -1,232 +1,237 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import "./style.css";
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
 
-const rootElement = document.getElementById("root");
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-if (rootElement.hasChildNodes()) {
-  ReactDOM.hydrate(<App />, rootElement);
-} else {
-  ReactDOM.render(<App />, rootElement);
-}
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <title>Global Freelance Marketplace connecting Engineers & Businesses</title>
+  </head>
+  <body>
 
-var NewComponent = React.createClass({
-  render: function() {
-    return (
-      <div>
-        {/* Required meta tags */}
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-        {/* Bootstrap CSS */}
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
-        {/* Custom CSS */}
-        <link href="css/style.css" rel="stylesheet" />
-        <title>Global Freelance Marketplace connecting Engineers &amp; Businesses</title>
-        <div className="main-wrapper">
-          <header>
-            <div className="header-map" />
-            <div className="container topbar-container">
-              <div className="row">
-                <div className="col-sm-1 col-md-1">
-                  <a href="#" className="header-logo">
-                    <img src="images/FE-logo.svg" />
-                  </a>
-                </div>
-                <div className="col-sm-8 col-md-8">
-                  <nav className="navbar navbar-expand-lg">
-                    <div className="container-fluid">
-                      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon" />
-                      </button>
-                      <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                        <ul className="navbar-nav">
-                          <li className="nav-item">
-                            <a className="nav-link" href="#">How it Works</a>
-                          </li>
-                          <li className="nav-item">
-                            <a className="nav-link" href="#">Find Engineering Jobs</a>
-                          </li>
-                          <li className="nav-item">
-                            <a className="nav-link" href="#">Blog</a>
-                          </li>
-                        </ul>
-                      </div>
+    <div class="main-wrapper">
+        <header>
+            <div class="header-map"></div>
+            <div class="container topbar-container">
+                <div class="row">
+                    <div class="col-sm-1 col-md-1">
+                        <a href="#" class="header-logo">
+                            <img src="images/FE-logo.svg" />
+                        </a>
                     </div>
-                  </nav>
-                </div>
-                <div className="col-md-3">
-                  <div className="header-right-btns">
-                    <div className="hire-btns">
-                      <div className="signup-btn"><p>Signup</p></div>
-                      <div className="butns-inn">
-                        <a href="#">Hire an Engineer</a>
-                        <div className="btns-line" />
-                        <a href="#">Apply for Jobs</a>
-                      </div>
+                    <div class="col-sm-8 col-md-8">
+                      <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">How it Works</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Find Engineering Jobs</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
                     </div>
-                    <a href="#" className="login-btn">Log in</a>
-                  </div>
+                    <div class="col-md-3">
+                        <div class="header-right-btns">
+                            <div class="hire-btns">
+                              <div class="signup-btn"><p>Signup</p></div>
+                              <div class="butns-inn">
+                                  <a href="#">Hire an Engineer</a>
+                                  <div class="btns-line"></div>
+                                  <a href="#">Apply for Jobs</a>
+                              </div>
+                            </div>
+                            <a href="#" class="login-btn">Log in</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div className="container banner-text-sec">
-              <div className="row">
-                <div className="text-center">
-                  <h1>Source engineers globally.<br />
+            <div class="container banner-text-sec">
+              <div class="row">
+                <div class="text-center">
+                  <h1>Source engineers globally.<br/>
                     Save cost, save time.</h1>
-                  <p>A global freelance marketplace that connects businesses with engineers on demand</p>
-                  <a href="#">Watch Now</a>
-                  <a href="#">Hire an Engineer</a>
+                    <p>A global freelance marketplace that connects businesses with engineers on demand</p>
+                    <a href="#">Watch Now</a>
+                    <a href="#">Hire an Engineer</a>
                 </div>
               </div>
             </div>
-          </header>
-          <section className="content-sec">
-            <div className="container">
-              <div className="popular-job-sec text-center">
-                <h2>Most Popular Jobs Serviced</h2>
-                <ul>
-                  <li>
-                    <a href="#">
-                      <figure><img src="images/print-services-icon.png" /></figure>
-                      <p>Print Services</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <figure><img src="images/network-security-services-icon.png" /></figure>
-                      <p>Network Security Services</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <figure><img src="images/audio-visual-services-icon.png" /></figure>
-                      <p>Audio Visual Services</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <figure><img src="images/data-center-services-icon.png" /></figure>
-                      <p>Data Center Services</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <figure><img src="images/field-engineering-services-icon.png" /></figure>
-                      <p>Field Engineering Services</p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="content-two-parts">
-                <div className="row btm-padding">
-                  <div className="col-md-6">
-                    <img src="images/business-homepage-feature-01.png" />
-                  </div>
-                  <div className="col-md-6">
-                    <h3>Contract jobs to over 75,000+ vetted engineers in 200+ countries.</h3>
-                    <p>We will algorithmically match the best engineers for the job. Our engineers who opt-in are background checked and ready to work. You will be able to filter and sort by rating, years of experience, and proximity to the job site.</p>
-                  </div>
+
+        </header>
+
+        <section class="content-sec">
+          <div class="container">
+            <div class="popular-job-sec text-center">
+              <h2>Most Popular Jobs Serviced</h2>
+              <ul>
+                <li>
+                  <a href="#">
+                    <figure><img src="images/print-services-icon.png" /></figure>
+                    <p>Print Services</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure><img src="images/network-security-services-icon.png" /></figure>
+                    <p>Network Security Services</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure><img src="images/audio-visual-services-icon.png" /></figure>
+                    <p>Audio Visual Services</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure><img src="images/data-center-services-icon.png" /></figure>
+                    <p>Data Center Services</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure><img src="images/field-engineering-services-icon.png" /></figure>
+                    <p>Field Engineering Services</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="content-two-parts">
+              <div class="row btm-padding">
+                <div class="col-md-6">
+                  <img src="images/business-homepage-feature-01.png" />
                 </div>
-                <div className="row btm-padding">
-                  <div className="col-md-6">
-                    <h3>Posting a job is easy and free!</h3>
-                    <p>Once we match you with the perfect engineer for the job, a 10% fee is deducted from the engineer’s earnings — it won’t cost you a dime.</p>
-                  </div>
-                  <div className="col-md-6">
-                    <img src="images/business-homepage-feature-02.png" />
-                  </div>
-                </div>
-                <div className="row btm-padding">
-                  <div className="col-md-6">
-                    <img src="images/business-homepage-feature-03.png" />
-                  </div>
-                  <div className="col-md-6">
-                    <h3>Personalized project management for everyone in your company.</h3>
-                    <p>Managing large scale projects with multiple engineers in multiple locations can be a challenge. Our dashboard and project views allow us to have everything in one place.</p>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-md-6">
-                    <h3>Stay in touch with messaging &amp; voice calls.</h3>
-                    <p>Keeping up to date on projects has never been easier. We have built various forms of getting in touch straight into the platform to allow for seamless communication between businesses and the engineers they hire.</p>
-                  </div>
-                  <div className="col-md-6">
-                    <img src="images/business-homepage-feature-04.png" />
-                  </div>
+                <div class="col-md-6">
+                  <h3>Contract jobs to over 75,000+ vetted engineers in 200+ countries.</h3>
+                  <p>We will algorithmically match the best engineers for the job. Our engineers who opt-in are background checked and ready to work. You will be able to filter and sort by rating, years of experience, and proximity to the job site.</p>
                 </div>
               </div>
-              <div className="benefits-sec">
-                <div className="container">
-                  <h4>Benefits</h4>
-                  <div className="row benefits-sec-inn">
-                    <div className="col-md-4">
-                      <img src="images/d-support-icon.png" />
-                      <h5>Dedicated Support</h5>
-                      <p>We’re here for you, 24/7. Just reach out!</p>
-                    </div>
-                    <div className="col-md-4">
-                      <img src="images/seam-api-icon.png" />
-                      <h5>Seamless Integration</h5>
-                      <p>Our platform’s API conveniently connects with the apps and software you already use.</p>
-                    </div>
-                    <div className="col-md-4">
-                      <img src="images/no-fees-icon.png" />
-                      <h5>No Hidden Fees</h5>
-                      <p>Pay no fees as a business. Service fees are deducted from the engineer’s earnings.</p>
-                    </div>
-                  </div>
-                  <div className="row benefits-sec-inn">
-                    <div className="col-md-4">
-                      <img src="images/75-engineers-icon.png" />
-                      <h5>75K+ Engineers</h5>
-                      <p>Source your jobs and match with our expansive engineer network.</p>
-                    </div>
-                    <div className="col-md-4">
-                      <img src="images/broaden-op-icon.png" />
-                      <h5>Broaden Opportunities</h5>
-                      <p>Filter through marketplace to find the perfect engineers for your projects.</p>
-                    </div>
-                    <div className="col-md-4">
-                      <img src="images/cost-savings-icon.png" />
-                      <h5>30% Cost Savings</h5>
-                      <p>Customers can save over 30% costs compared to traditional engagement.</p>
-                    </div>
-                  </div>
+              <div class="row btm-padding">
+                <div class="col-md-6">
+                  <h3>Posting a job is easy and free!</h3>
+                  <p>Once we match you with the perfect engineer for the job, a 10% fee is deducted from the engineer’s earnings — it won’t cost you a dime.</p>
+                </div>
+                <div class="col-md-6">
+                  <img src="images/business-homepage-feature-02.png" />
                 </div>
               </div>
-              <div className="content-two-parts">
-                <div className="row">
-                  <div className="col-md-7">
-                    <img src="images/fe-mobile.png" />
-                  </div>
-                  <div className="col-md-5">
-                    <h3>Find Engineers in your Job locations worldwide</h3>
-                    <p>Search and filter available engineers by rating, location, experience, and rate.</p>
-                    <a href="#"><img src="images/googleplay.png" className="apps-icon" /></a>
-                    <a href="#"><img src="images/appstore.png" className="apps-icon" /></a>
-                  </div>
+              <div class="row btm-padding">
+                <div class="col-md-6">
+                  <img src="images/business-homepage-feature-03.png" />
+                </div>
+                <div class="col-md-6">
+                  <h3>Personalized project management for everyone in your company.</h3>
+                  <p>Managing large scale projects with multiple engineers in multiple locations can be a challenge. Our dashboard and project views allow us to have everything in one place.</p>
                 </div>
               </div>
-              <div className="blog-sec">
-                <h4>Blog Posts</h4>
-                <div className="row">
-                  <div className="col-md-4 post-wrap">
-                    <img src="images/cell-site-thumb.jpg" />
-                    <div className="post-wrap-txt">
-                      <a href="#">Cable Providers</a>
-                      <h3>Cell Site Deployments Revolutionized by Field Engineer Marketplace</h3>
-                      <div className="div-block-10"><div className="div-block-73"><img src="images/broaden-op-icon.png" alt="" className="image-56 obj-cover" /></div><p className="paragraph-3">by</p><p className="paragraph-4">FE Administrator</p><p className="paragraph-3">|</p><p className="paragraph-3">December 8, 2022</p></div>
-                    </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Stay in touch with messaging & voice calls.</h3>
+                  <p>Keeping up to date on projects has never been easier. We have built various forms of getting in touch straight into the platform to allow for seamless communication between businesses and the engineers they hire.</p>
+                </div>
+                <div class="col-md-6">
+                  <img src="images/business-homepage-feature-04.png" />
+                </div>
+              </div>
+            </div>
+
+            <div class="benefits-sec">
+              <div class="container">
+                <h4>Benefits</h4>
+                <div class="row benefits-sec-inn">
+                  <div class="col-md-4">
+                    <img src="images/d-support-icon.png" />
+                    <h5>Dedicated Support</h5>
+                    <p>We’re here for you, 24/7. Just reach out!</p>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="images/seam-api-icon.png" />
+                    <h5>Seamless Integration</h5>
+                    <p>Our platform’s API conveniently connects with the apps and software you already use.</p>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="images/no-fees-icon.png" />
+                    <h5>No Hidden Fees</h5>
+                    <p>Pay no fees as a business. Service fees are deducted from the engineer’s earnings.</p>
+                  </div>
+                </div>
+                <div class="row benefits-sec-inn">
+                  <div class="col-md-4">
+                    <img src="images/75-engineers-icon.png" />
+                    <h5>75K+ Engineers</h5>
+                    <p>Source your jobs and match with our expansive engineer network.</p>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="images/broaden-op-icon.png" />
+                    <h5>Broaden Opportunities</h5>
+                    <p>Filter through marketplace to find the perfect engineers for your projects.</p>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="images/cost-savings-icon.png" />
+                    <h5>30% Cost Savings</h5>
+                    <p>Customers can save over 30% costs compared to traditional engagement.</p>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-        </div>
-      </div>
-    );
-  }
-});
+
+            <div class="content-two-parts">
+              <div class="row">
+                <div class="col-md-7">
+                  <img src="images/fe-mobile.png" />
+                </div>
+                <div class="col-md-5">
+                  <h3>Find Engineers in your Job locations worldwide</h3>
+                  <p>Search and filter available engineers by rating, location, experience, and rate.</p>
+                  <a href="#"><img src="images/googleplay.png" class="apps-icon" /></a>
+                  <a href="#"><img src="images/appstore.png" class="apps-icon" /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-sec">
+              <h4>Blog Posts</h4>
+              <div class="row">
+                <div class="col-md-4 post-wrap">
+                  <img src="images/cell-site-thumb.jpg" />
+                  <div class="post-wrap-txt">
+                    <a href="#">Cable Providers</a>
+                    <h3>Cell Site Deployments Revolutionized by Field Engineer Marketplace</h3>
+                    <div class="div-block-10"><div class="div-block-73"><img src="images/broaden-op-icon.png" alt="" class="image-56 obj-cover"></div><p class="paragraph-3">by</p><p class="paragraph-4">FE Administrator</p><p class="paragraph-3">|</p><p class="paragraph-3">December 8, 2022</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </section>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>
