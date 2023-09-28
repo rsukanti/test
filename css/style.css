@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img {
+	border: 0;
+	max-width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+.container {
+    max-width: 1170px;
+  }
+header{
+    width: 100%;
+    margin: 0;
+    padding: 25px 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#003588+42,338a96+100 */
+background: #003588; /* Old browsers */
+background: -moz-linear-gradient(left, #003588 42%, #338a96 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #003588 42%,#338a96 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #003588 42%,#338a96 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003588', endColorstr='#338a96',GradientType=1 ); /* IE6-9 */
+    position: relative;
+    z-index: 0;
+}
+div.header-map{
+    background: url('../images/header-bg.png') no-repeat top center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+div.topbar-container{
+    max-width: 1750px;
+}
+.header-logo {
+    position:relative;
+}
+.header-logo img{
+    width: 65px;
+    display: block;
+}
+.navbar-toggler-icon{
+
+}
+nav.navbar {
+    padding: 22px 0;
+}
+nav.navbar ul.navbar-nav li.nav-item{
+    padding: 0 18px;
+}
+nav.navbar ul.navbar-nav li.nav-item .nav-link{
+    color:#ffffff;
+    font-weight: 700;
+    padding: 0;
+}
+.header-right-btns{
+    float: right;
+    position:relative;
+    margin-top: 12px;
+}
+.butns-inn {
+	margin-top:3px;
+    padding-bottom: 10px;
+    float: left;
+}
+.butns-inn a{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0;
+    padding: 0 25px;
+    float: left;
+    transition: background-color .2s;
+}
+.butns-inn a:hover {
+	background-color: #fff;
+	color: #003588;
+    transition: background-color .2s;
+}
+.hire-btns {
+	float: left;
+    border-right: solid 1px #ffffff;
+    border-left: solid 1px #ffffff;
+    border-bottom: solid 1px #ffffff;
+}
+.btns-line{
+    background: #ffffff;
+    width: 1px;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.signup-btn {
+	justify-content: center;
+	display: flex;
+    position: relative;
+}
+.signup-btn p{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: -9px 0 0 0;
+    padding: 0;
+}
+.signup-btn::before{
+    left: 0;
+}
+.signup-btn::before, 
+.signup-btn::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	border-color: #ffffff;
+	border-width: 1px;
+	width: 118px;
+	background: #fff;
+	height: 1px;
+} 
+.signup-btn::after{
+    right: 0;
+}
+.header-right-btns a.login-btn{
+    border-left: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 48px;
+    text-decoration: none;
+    margin: 0px 0 0 15px;
+    padding: 0 0 0 15px;
+    float: left;
+}
+
+
+.banner-text-sec {
+    padding: 115px 0 215px;
+}
+h1 {
+	margin-top: 60px;
+	color: #fff;
+	font-size: 42px;
+	line-height: 1.48;
+	font-weight: 800;
+	text-align: center;
+}
+.banner-text-sec p {
+	margin-top: 0;
+	margin-bottom: 30px;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.89;
+	font-weight: 600;
+}
+.banner-text-sec a {
+	margin: 45px 15px 0;
+	padding: 8px 25px;
+    display: inline-block;
+	border-radius: 1px;
+	background-color: #fff;
+	-webkit-transition: .2s;
+	transition: .2s;
+	color: #6d6f6f;
+	line-height: 30px;
+	font-weight: 700;
+    text-decoration: none;
+}
+.banner-text-sec a:hover {
+	background-color: #2e589b;
+	color: #fff;
+}
+
+section{
+    width: 100%;
+    margin: 0;
+    padding: 100px 0;
+    float: left;
+}
+section.content-sec h2 {
+	margin-bottom: 50px;
+	color: #3e4141;
+	font-size: 34px;
+    line-height: 36px;
+}
+.popular-job-sec ul{
+    margin: 0;
+    padding: 0;
+}
+.popular-job-sec ul li {
+	width: 18.4%;
+	margin: 0 1%;
+	padding: 0;
+	float: left;
+}
+.popular-job-sec ul li:first-child{
+    margin-left: 0;
+}
+.popular-job-sec ul li:last-child{
+    margin-right: 0;
+}
+.popular-job-sec ul li a{
+    border: 1px solid #dee1e1;
+    border-radius: 2px;    
+    float: left;
+    width: 100%;
+}
+.popular-job-sec ul li a figure {
+    margin: 0;
+    padding: 15px 0;
+    background: #f7f7f7;
+    border-bottom: 1px solid #dee1e1;
+}
+.popular-job-sec ul li a figure img{
+    width: 35px;
+}
+.popular-job-sec ul li a p {
+	margin-top: 14px;
+	margin-bottom: 16px;
+	color: #002155;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.btm-padding{
+    margin-bottom: 200px;
+}
+.content-two-parts {
+    margin: 200px 0;
+    float: left;
+}
+.content-two-parts h3{
+    margin-bottom: 20px;
+    color: #002155;
+    font-size: 24px;
+    line-height: 1.42;
+}
+.content-two-parts p{
+    color: #848787;
+    font-size: 18px;
+    line-height: 1.56;
+    font-weight: 400;
+}
+
+.benefits-sec{
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.benefits-sec h4, .blog-sec h4 {
+	margin-bottom: 50px;
+	color: #848787;
+	font-size: 24px;
+	line-height: 1;
+	text-align: center;
+}
+.benefits-sec-inn {
+    margin-bottom: 40px;
+}
+.benefits-sec-inn img{
+    float: left;
+    margin-right: 25px;
+    width: 50px;
+    height: 50px;
+}
+.benefits-sec-inn h5 {
+	margin-bottom: 5px;
+	color: #3e4141;
+	font-size: 16px;
+	line-height: 1.31;
+	font-weight: 600;
+}
+.apps-icon{
+    height: 40px;
+    margin-right: 15px;
+}
+.benefits-sec-inn p {
+	color: #848787;
+	font-size: 12px;
+	line-height: 1.33;
+}
+
+.blog-sec{
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.post-wrap {
+	padding: 0;
+	border: 1px solid #e6e6e6;
+	border-radius: 2px;
+}
+.post-wrap-txt{
+    margin: 0;
+    padding: 30px;
+}
+
